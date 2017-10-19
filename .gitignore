@@ -1,0 +1,31 @@
+# -----------------------------------------------------------------
+# .gitignore for Scratch
+#
+# Our approach is to ignore everything, and explicitly define what
+# will be tracked. It is assumed that we will never touch wordpress
+# core and that `npm run dev` will compile our theme files in the
+# wordpress directory.
+#
+# -----------------------------------------------------------------
+
+# Ignore all files starting with .
+.*
+
+# Ignore all files starting with ~
+~*
+
+# Ignore everything in the root except .gitignore, project config,
+# the readme, and your theme directory.
+/*
+!.gitignore
+!package.json
+!README.md
+!/wp-content
+/wp-content/uploads
+/wp-content/themes/twentyfifteen
+/wp-content/themes/twentysixteen
+/wp-content/themes/twentyseventeen
+# Track .htaccess file
+!.htaccess
+
+#Ignore Project Notes
